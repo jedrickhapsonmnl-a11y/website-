@@ -1,0 +1,817 @@
+
+/* === GLOBAL STYLES === */
+
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: #061A2A;
+}
+
+
+/* === NAVIGATION BAR === */
+
+nav {
+  background-color: #0D2B3D;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.logo {
+  color: white;
+  font-size: 40px;
+  margin-right: auto;
+  margin-left: 25px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  transition: all 0.7s ease 0;
+}
+
+header a:hover {
+  background-color: lightgrey;
+  color: black;
+  font-size: larger;
+  border-radius: 15px;
+}
+
+
+/* ==== IMAGES === */
+
+.image {
+  height: 500px;
+  width: 1360px;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid rgba(50, 190, 255, 0.18);
+  border-radius: 16px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55);
+}
+
+.category-image {
+  height: 300px;
+  width: 470px;
+  margin: 50px 20px 20px 50px;
+  display: block;
+  border: 1px solid rgba(50, 190, 255, 0.18);
+  border-radius: 16px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55);
+}
+
+
+/* === TYPEWRITER EFFECTS === */
+
+.typewriter,
+.typewriter-one,
+.typewriter-two {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.typewriter {
+  padding-top: 30px;
+}
+
+.typewriter-one,
+.typewriter-two {
+  padding-top: 20px;
+}
+
+.typewriter h6,
+.typewriter-one h6,
+.typewriter-two h6 {
+  font-size: 30px;
+  color: white;
+  margin: 0 auto 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid;
+}
+
+.typewriter h6 {
+  animation: typing 4s steps(30) forwards;
+}
+
+.typewriter-one h6,
+.typewriter-two h6 {
+  animation: typing 3s steps(30) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+/* ==== COMMON CONTAINERS === */
+
+.container-one,
+.container-two,
+.container-three,
+.skill,
+.phishing-one,
+.phishing-two,
+.phish-one,
+.con-about,
+.lesson-one,
+.container-four {
+  background: rgba(255, 255, 255, .08);
+  border-radius: 20px;
+  color: white;
+  transition: .4s;
+  margin: 30px;
+}
+
+.container-one:hover,
+.container-two:hover,
+.container-three:hover,
+.skill:hover,
+.phishing-one:hover,
+.phishing-two:hover,
+.phish-one:hover,
+.con-about:hover,
+.lesson-one:hover,
+.container-four {
+  transform: translateY(-10px);
+  background: #12384D;
+}
+
+
+/* === COMMON PARAGRAPHS === */
+
+.container-one p,
+.container-three p,
+.phishing-one p,
+.phishing-two p,
+.con-about p,
+.container-four {
+  color: #aaa;
+  font-size: 22px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.stat p,
+.skill p,
+.phish-one p,
+.lesson-one p, 
+.container-four {
+  color: #aaa;
+  font-size: 20px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+
+/* === COMMON HEADINGS === */
+
+.phishing-one h1,
+.phishing-two h1,
+.skill h2,
+.phish-one h2,
+.lesson-one h1 {
+  color: white;
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.phishing-one h1,
+.phishing-two h1,
+.skill h2,
+.phish-one h2 {
+  text-align: center;
+}
+
+.lesson-one h1 {
+  text-align: start;
+}
+
+
+/* === CONTAINER ONE === */
+
+.container-one {
+  height: auto;
+  padding: 30px;
+  margin-bottom: 60px;
+}
+
+.container-one p {
+  margin-top: 0;
+}
+
+
+/* === CONTAINER TWO STATS === */
+
+.container-two {
+  text-align: center;
+  text-align: justify;
+  height: 240px;
+  padding: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat {
+  padding: 30px;
+  flex: 1;
+}
+
+.stat strong {
+  display: block;
+  font-size: 50px;
+  padding-top: 30px;
+  text-align: center;
+  line-height: 1.1;
+  color: white;
+}
+
+.divider {
+  width: 1px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+/* === CONTAINER THREE === */
+
+.container-three {
+  height: auto;
+  padding: 30px;
+  padding-bottom: 10px;
+}
+
+.container-three p {
+  margin-top: 0;
+}
+
+
+/* === SKILLS SECTION === */
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+
+.skill {
+  padding: 30px;
+  height: 300px;
+  text-align: center;
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+
+/* === LINKS SECTION === */
+
+.links, 
+.categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+}
+
+.links a {
+  display: block;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid #12384D;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.categories a {
+  display: block;
+  padding: 30px;
+  margin: 30px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.links a:hover {
+  transform: translateY(-10px);
+  background: #12384D;
+  border-color: #12384D;
+  color: white;
+}
+
+.categories a:hover {
+  transform: translateY(-10px);
+}
+
+.links small {
+  display: block;
+  font-size: 15px;
+  color: #aaa;
+  font-weight: 400;
+}
+
+.links a:hover small {
+  color: white;
+}
+
+
+/* === PHISHING SECTION ONE === */
+
+.phishing-one {
+  text-align: center;
+  text-align: justify;
+  height: 550px;
+  padding: 30px;
+}
+
+
+/* === PHISHING TYPES === */
+
+.kind-one {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+
+.phish-one {
+  padding: 30px;
+  height: 350px;
+  text-align: center;
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+
+/* === PHISHING SECTION TWO === */
+
+.phishing-two {
+  text-align: center;
+  text-align: justify;
+  height: 520px;
+  padding: 30px;
+}
+
+
+/* === ABOUT SECTION === */
+
+.con-about {
+  text-align: center;
+  text-align: justify;
+  height: 400px;
+  padding: 30px;
+}
+
+
+/* === LESSON SECTION === */
+
+.about-one {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+
+.lesson-one {
+  height: 530px;
+  padding: 30px;
+  text-align: center;
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+
+/* === ACCORDION === */ 
+
+details {
+  background-color: #0D2B3D;
+  margin: 30px;
+  border-radius: 20px;
+  padding: 80px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+details p {
+  color: #aaa;
+  font-size: 22px;
+  line-height: 1.7;
+  text-align: justify;
+  padding: 10px;
+}
+
+details[open] {
+  background-color: #0D2B3D;
+}
+
+
+/* === FORM === */ 
+
+.contact {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 30px;
+  color: white;
+  text-align: center;
+  background: rgba(255, 255, 255, .08);
+  border-radius: 20px;
+}
+
+.contact h1 {
+  font-size: 30px;
+}
+
+.contact p {
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: 1px solid #12384D;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.contact button {
+  padding: 12px;
+  background: rgba(255, 255, 255, .12);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact button:hover {
+  background: #1b526e;
+}
+
+
+/* === FOOTER === */
+
+footer {
+  background: rgba(255, 255, 255, .08);
+  height: 60px;
+  padding: 10px;
+  margin: 60px 30px 30px 30px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+}
+
+.footer-content {
+  padding: 25px 20px;
+}
+
+.footer-content h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.footer-content p {
+  color: #c5eaff;
+  margin-bottom: 15px;
+}
+
+
+/* === RESPONSIVE DESIGN === */
+
+@media (max-width: 1024px) {
+  .image {
+    width: 95%;
+    height: auto;
+    aspect-ratio: 1360 / 500;
+    object-fit: cover;
+  }
+
+  .category-image {
+    width: 90%;
+    max-width: 470px;
+    height: auto;
+    aspect-ratio: 47 / 30;
+    margin: 30px auto;
+  }
+
+  .container-one,
+  .container-two,
+  .container-three,
+  .skill,
+  .phishing-one,
+  .phishing-two,
+  .phish-one,
+  .con-about,
+  .lesson-one,
+  .container-four {
+    height: auto;
+    min-width: 0;
+  }
+
+  .container-two {
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    min-width: 0;
+  }
+
+  .stat strong {
+    font-size: 36px;
+  }
+
+  .skills,
+  .kind-one,
+  .about-one {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: auto;
+    margin: 20px;
+  }
+}
+
+
+/* === TABLETS === */
+
+@media (max-width: 768px) {
+  nav {
+    margin: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .image {
+    width: calc(100% - 30px);
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .container-one,
+  .container-two,
+  .container-three,
+  .skill,
+  .phishing-one,
+  .phishing-two,
+  .phish-one,
+  .con-about,
+  .lesson-one,
+  .container-four {
+    padding: 20px;
+  }
+
+  .container-one p,
+  .container-three p,
+  .phishing-one p,
+  .phishing-two p,
+  .con-about p,
+  .stat p,
+  .skill p,
+  .phish-one p,
+  .lesson-one p,
+  .container-four p {
+    font-size: 17px;
+  }
+
+  .stat {
+    padding: 15px;
+  }
+
+  .stat strong {
+    font-size: 30px;
+  }
+
+  .links a,
+  .categories a {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  details {
+    margin: 20px;
+    padding: 35px;
+  }
+
+  summary {
+    font-size: 24px;
+  }
+}
+
+
+/* === MOBILE PHONES === */
+
+@media (max-width: 480px) {
+  nav {
+    margin: 10px;
+    padding: 10px 5px;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 10px;
+    font-size: 28px;
+  }
+
+  nav a {
+    margin: 2px;
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  .image {
+    width: calc(100% - 20px);
+    height: 180px;
+  }
+
+  .category-image {
+    width: calc(100% - 30px);
+    margin: 20px auto;
+  }
+
+  .typewriter,
+  .typewriter-one,
+  .typewriter-two {
+    padding-top: 15px;
+    max-width: 100%;
+  }
+
+  .typewriter h6,
+  .typewriter-one h6,
+  .typewriter-two h6 {
+    font-size: 17px;
+  }
+
+  .container-one,
+  .container-two,
+  .container-three,
+  .skill,
+  .phishing-one,
+  .phishing-two,
+  .phish-one,
+  .con-about,
+  .lesson-one,
+  .container-four {
+    margin: 15px;
+    padding: 18px;
+    height: auto;
+  }
+
+  .container-one p,
+  .container-three p,
+  .phishing-one p,
+  .phishing-two p,
+  .con-about p,
+  .stat p,
+  .skill p,
+  .phish-one p,
+  .lesson-one p,
+  .container-four p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .container-two {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .stat {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .stat strong {
+    font-size: 30px;
+    padding-top: 10px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .skills,
+  .kind-one,
+  .about-one,
+  .links,
+  .categories {
+    grid-template-columns: minmax(0, 1fr);
+    width: auto;
+    margin: 15px;
+    gap: 15px;
+  }
+
+  .skill,
+  .phish-one,
+  .lesson-one {
+    height: auto;
+  }
+
+  .links a,
+  .categories a {
+    margin: 0;
+    padding: 18px;
+  }
+
+  .categories a {
+    font-size: 22px;
+  }
+
+  .phishing-one h1,
+  .phishing-two h1,
+  .skill h2,
+  .phish-one h2,
+  .lesson-one h1 {
+    font-size: 22px;
+  }
+
+  details {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  summary {
+    font-size: 20px;
+  }
+
+  details p {
+    font-size: 15px;
+    padding: 0;
+  }
+
+  .contact {
+    width: auto;
+    margin: 15px;
+    padding: 18px;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  footer {
+    height: auto;
+    margin: 25px 15px;
+    padding: 15px;
+  }
+
+  .footer-content {
+    padding: 10px;
+  }
+}
